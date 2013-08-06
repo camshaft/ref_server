@@ -14,4 +14,4 @@ basic_test() ->
 
   ?assertEqual(ok, ref_server:set(App, Ref, Property, <<"hello world">>)),
 
-  ?assertEqual(Value, ref_server:get(App, Ref, Property)).
+  ?assertEqual({ok, Value}, ref_server:get(App, Ref, Property)).

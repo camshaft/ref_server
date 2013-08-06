@@ -33,7 +33,7 @@ get(App, Ref, Property) ->
     {'EXIT', {badarg, _}} ->
       undefined;
     Value ->
-      Value
+      {ok, Value}
   end.
 
 %% @doc set the property for the app/ref pair
