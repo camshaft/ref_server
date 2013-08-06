@@ -1,0 +1,12 @@
+{application, ref_server, [
+  {id, "ref_server"},
+  {description, "Simple gen_sever for saving reference configurations"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {mod, {ref_server_app, []}},
+  {env, []}
+]}.
